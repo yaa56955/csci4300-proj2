@@ -1,0 +1,171 @@
+/* nav and footer */
+      /*Remove default page margins for the entire body element.*/
+body {
+    margin: 0%;   
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ebdde4;
+    color: #6e4759;
+}
+    /*style nav to differentiate it from the rest of the page (at least 2 properties ie. background-color …)*/
+nav{           
+    font-weight: bold;
+    font-style: italic;
+    color:#ebdde4;
+    background-color: #2b1b28;
+    /*make nav a flex parent and use a flex property to separate your name on the left and the contact link on the right*/
+    display:flex;
+    justify-content: space-evenly;
+}
+    /*style footer to differentiate it from the rest of the page (at least 2 properties)*/
+footer{
+    background-color: #2b1b28;
+    color: white;
+    padding: 15px;
+    /*make footer a flex parent and justify the children center */
+    display:flex;
+    justify-content: center;
+}
+
+/* splash page */
+.splash{
+    color: #d09fb6;
+    background-color: #2b1b28;
+    padding: 5%;
+    text-align: center;
+}
+    /*change the default style (font, font-size, color….) using a Google font and a color number*/
+h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 200%;
+    color:#ebdde4;
+}
+    /*Style the border and/or border-radius property of the headshot image*/
+img{
+    border-radius: 15px;
+}
+    /*Change the style of this paragraph*/
+#address{
+    font-weight: bold;
+}
+    /*Change the style of this paragraph*/
+#tagline{
+    font-style: italic;
+}
+
+/* sections, etc. */
+    /*Style >=2 border properties of the horizontal rules */
+hr{
+    border-radius: 30%;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #2b1b28;
+    margin: 0 10% 2% 10%;
+}
+    /*Style the h2 headings of these sections using a Google font and a color number*/
+h2{
+    color: #2b1b28;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    margin: 0 0 0 2%;
+}
+    /*style the education paragraph as you prefer (you may add additional tags and/or classes )*/
+.bodytext{
+    margin: 0 0 1% 4%;
+}
+    /*Change the default style of the unordered lists of these sections */
+ul{
+    margin: 0 0 1% 4%;
+    font-style: italic;
+}
+    /*Style the description lists of these sections to use grid layout*/
+dl{
+    display: grid;
+}
+    /*Set the color for the anchor text of links
+    Remove the underline for the anchor text of links
+    Style the hover state of links to be somehow different in this  state.
+    Set font size of >= 2 fonts*/
+#bodylink{
+    color: #2b1b28;
+    font-weight: bold;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#ebdde4;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*project cards*/
+    /*style class three-col with display grid that creates a 3 column layout for its three child 'cards'.
+    ie. make the 3 card divs a 3 column layout  with some space between each child*/ 
+.three-col{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+    /*style images within the card to position and appear appropriately within the card
+    Style a card layout to create a ‘card style’ - visually separated (shadow, outline, background color, …)*/
+.card{
+    background-color: #fffafdf3;
+    border: 0px solid;
+    border-radius: 15px;
+    padding: 5%;
+    margin: 2%;
+    box-shadow: 0 4px 8px 0 #362132;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #5e1e52;
+  margin: 0%;
+}
+
+/*contact page*/
+    /*style class one-col that creates a 1 column container for the info,  form and submit button*/
+.one-col{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20% 5% 20%;
+}
+.contact{
+    text-align: center;
+    padding: 10%;
+    background-color: #2b1b28;
+}
+.fa-solid{
+    font-size: 300%;
+}
+    /*style the input elements (input, textarea…) appropriately*/
+input,textarea{
+    margin: 1%;
+    border-width: 0;
+    border-radius: 2px;
+}
+label{
+    font-size: 120%;
+}
+input[type=submit]{
+    margin: 1% 25% 0 37%;
+    padding: 2%;
+    width: 25%;
+    background-color: #2b1b28;
+    font-size: 150%;
+    font-weight: bold;
+    color: #ebdde4;
+    border-radius: 15px;
+    font-family: 'Jost', sans-serif;
+    transition: 0.3s;
+}
+input[type=submit]:hover{
+    background-color: white;
+    color:#2b1b28;
+}
